@@ -10,7 +10,8 @@ This section contains two example DAGs for Apache Airflow, each demonstrating di
 This DAG fetches forex rates for different currencies using HTTP API requests and displays the results using XCom. 
 ### Components 
 - Three `SimpleHttpOperator` tasks retrieve forex rates for EUR, USD, and JPY. -
--  A `BashOperator` task displays task IDs and fetched data from XCom. ### Scheduling This DAG runs daily at midnight. 
+-  A `BashOperator` task displays task IDs and fetched data from XCom.
+  ### Scheduling This DAG runs daily at midnight. 
 ### Dependencies 
 - Parallel execution of currency retrieval tasks. 
 - `show_data` task runs after currency retrieval tasks.  
